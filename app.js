@@ -40,7 +40,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 // Set security HTTP headers
 // app.use(helmet());
-app.use(helmet({ contentSecurityPolicy: false }));
+app.use(helmet({ contentSecurityPolicy: true }));
 
 // Development logging
 // make the logging middleware only in the development environment
