@@ -52,7 +52,7 @@ if (process.env.NODE_ENV === 'development') {
 // rateLimit is a middleware (function)
 // Allow 100 req from a certain IP in 1hr
 const limiter = rateLimit({
-  max: 100,
+  max: 101,
   windowMs: 60 * 60 * 1000,
   message: 'Too many requests from this IP, Please try again in an hour',
 });
