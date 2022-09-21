@@ -4,7 +4,7 @@ include _reviewCard
 
 block append head
   //- script(src='/js/mapbox.js', defer)
-  meta(http-equiv='Content-Security-Policy' content="script-src 'self' https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.14.1/build/ol.js ")
+  meta(http-equiv='Content-Security-Policy' content="script-src 'self' https://cdn.jsdelivr.net 'unsafe-inline' 'unsafe-eval'")
   script(src='https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.14.1/build/ol.js') 
 
   //- script-src 'self' http://xxxx 'unsafe-inline' 'unsafe-eval';
